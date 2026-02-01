@@ -9,4 +9,7 @@ This folder contains two files.
 This folder contains three files.
 - AngleArray.m : Configuration information of 75 groups of robot joints.
 - RobotData_Exp2_Virtual.m : Configuration information of elements such as robots and cameras in a virtual environment.
-- RobotData_Exp2_Virtual.m : Configuration information of elements such as robots and cameras in a virtual environment.
+- TestRemoveOcclusionWithTwoRobotVAPFWithVVL.m : Test VAPF to remove the occlusion of the camera by the robot.
+## GJK
+This folder contains three files.
+- 
