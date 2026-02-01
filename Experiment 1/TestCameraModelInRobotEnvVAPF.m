@@ -46,7 +46,8 @@ if dirdot < 0
     v = -v;
 end
 Sphere.center = cam1.T.t' + v' * max_dist;
-Sphere.R = max_dist * max_theta;
+radiu_adjust = 0;
+Sphere.R = max_dist * max_theta + radiu_adjust;
 Sampling.center = cam1.T.t' + v' * max_dist;
 Sampling.R = max_r;
 Cone = GetConeExpress(Sampling.center, cam1.T.t', Sampling.R);
@@ -170,4 +171,5 @@ end
 % cam1.mesh(X4, Y4, Z4);
 % cam1.mesh(X5, Y5, Z5);
 % cam1.mesh(X6, Y6, Z6);
+
 % cam1.mesh(X7, Y7, Z7);
