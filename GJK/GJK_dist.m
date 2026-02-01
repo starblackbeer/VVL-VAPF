@@ -1,7 +1,5 @@
 %This function is based on the book Real-Time Collision Detection
-% (http://realtimecollisiondetection.net/)
-%
-%It computes the distance, the points of closest proximity points and also
+%Based minkowsky diference, it computes the distance, the points of closest proximity points and also
 %returns the points last contained in the simplex.
 %[dist,pts,G,H] = GJK_dist_7_point_poly( shape1, shape2 )
 %
@@ -275,6 +273,7 @@ end
       H=H+B(i)*pts_1_2(4:6,i);
   end
 end
+
 
 
 
