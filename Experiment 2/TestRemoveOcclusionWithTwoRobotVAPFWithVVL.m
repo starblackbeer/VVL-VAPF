@@ -131,7 +131,6 @@ for idx = 0 : 24
             link_id = 6;
         end
         Vec = Vec / norm(Vec);
-        VelArray(i,:) = Vec';
         magnitude=0.5;
         CartVel = [Vec(1); Vec(2); Vec(3); 0; 0; 0;] * magnitude;
         % Calculate the Joint Velocity
@@ -142,4 +141,5 @@ for idx = 0 : 24
         robot = robot_update(robot, q, 1);      
         robot(1) = robot_update_figure(robot(1));
     end
+
 end
