@@ -80,12 +80,12 @@ for select_index = 1 : index - 1
     end
     %% Judge the occlusion relationship
     flag(select_index) = 0;
-    [dist1,~,~,~] = GJK_dist(robot(1).robot_shape.obb1,hcone,64);
-    [dist2,~,~,~] = GJK_dist(robot(1).robot_shape.obb2,hcone,64);
-    [dist3,~,~,~] = GJK_dist(robot(1).robot_shape.obb3,hcone,64);
-    [dist4,~,~,~] = GJK_dist(robot(1).robot_shape.obb4,hcone,64);
-    [dist5,~,~,~] = GJK_dist(robot(1).robot_shape.obb5,hcone,64);
-    [dist6,~,~,~] = GJK_dist(robot(1).robot_shape.obb6,hcone,64);
+    [dist1,~,~,~] = GJK_dist(robot(1).robot_shape.obb1,hcone,128);
+    [dist2,~,~,~] = GJK_dist(robot(1).robot_shape.obb2,hcone,128);
+    [dist3,~,~,~] = GJK_dist(robot(1).robot_shape.obb3,hcone,128);
+    [dist4,~,~,~] = GJK_dist(robot(1).robot_shape.obb4,hcone,128);
+    [dist5,~,~,~] = GJK_dist(robot(1).robot_shape.obb5,hcone,128);
+    [dist6,~,~,~] = GJK_dist(robot(1).robot_shape.obb6,hcone,128);
     if dist <= 0.01 || dist2 <= 0.01 || dist3 <= 0.01 || dist4 <= 0.01 || dist5 <= 0.01 || dist6 <= 0.01
         flag(select_index) = 1;
     end
@@ -173,3 +173,4 @@ end
 % cam1.mesh(X6, Y6, Z6);
 
 % cam1.mesh(X7, Y7, Z7);
+
