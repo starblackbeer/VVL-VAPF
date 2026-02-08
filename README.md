@@ -13,7 +13,7 @@ This folder contains three files.
 ## GJK DISTANCE
 This folder contains three files.
 - GJK_dist.m : Calculate the distance and the nearest point between two convex bodies based on the Minkowski difference.
-- GJK_dist.m : Calculate the collision state between two convex bodies based on the Minkowski difference.
+- GJK.m : Calculate the collision state between two convex bodies based on the Minkowski difference.
 - pointTriangleDistance.m : Subfunctions of GJK_dist.
 - support_2.m : Subfunctions of GJK_dist.
 - distLinSeg : Subfunctions of GJK_dist.
